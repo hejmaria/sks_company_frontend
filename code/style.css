@@ -40,14 +40,19 @@ h2 {
 }
 
 .hero h1 {
-  color: white;
-  font-size: 3.5rem;
+  color: var(--grey);
+  font-size: 4.5rem;
+  font-weight: 900;
 }
 
 /* ///// HEADER /////////////////////////////////////// */
 
 .hero {
-  background-image: url(./images/gbg_vy.jpg);
+  background-image:
+          linear-gradient(
+                  rgba(60, 60, 60, 0.3),
+                  rgba(60, 60, 60, 0.3)),
+          url(./images/sks_header.jpg);
   height: 520px;
   background-position: 15%;
   position: relative;
@@ -71,7 +76,7 @@ h2 {
 
 /* //// SKS intro /////////////////////////////////////// */
 .text-section:nth-child(2n-1) {
-  background-color: var (--grey);
+  background-color: var(--grey);
 }
 .intro-container {
   margin: 0 auto;
@@ -166,10 +171,15 @@ footer {
   width: 90%;
 }
 
+.footer-grid a {
+  color: var(--yellow);
+}
+
 .footer-left,
 .footer-mid,
 .footer-right {
-  background-color: var(--grey);
+  background-color: var(--blue);
+  color: var(--grey)
 }
 
 /* .footer-container a,
