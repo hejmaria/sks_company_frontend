@@ -1,0 +1,14 @@
+/* ///// Animations and modules  */
+
+.rotating-text {
+
+}
+
+.rotating-text-word {
+    left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
