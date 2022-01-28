@@ -94,8 +94,8 @@ p {
 .intro-box {
   width: 60%;
   color: var(--blue);
-  font-size: 2rem;
-  line-height: 4rem;
+  font-size: 1.5rem;
+  line-height: 3rem;
   font-weight: 700;
   border-left: solid 5px var(--blue);
   padding: 2% 0 2% 5%;
