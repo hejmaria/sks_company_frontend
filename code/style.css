@@ -31,7 +31,7 @@ a.skip:hover {
   overflow: visible;
 }
 
-/* ///// HEADINGS /////////////////////////////////////// */
+/* ///// HEADINGS + TYPOGRAPHY /////////////////////////////////////// */
 
 h1,
 h2 {
@@ -39,10 +39,9 @@ h2 {
   font-weight: 700;
 }
 
-.hero h1 {
-  color: var(--grey);
-  font-size: 4.5rem;
-  font-weight: 900;
+p {
+  font-size: 1.2rem;
+  line-height: 2rem;
 }
 
 /* ///// HEADER /////////////////////////////////////// */
@@ -53,13 +52,21 @@ h2 {
                   rgba(60, 60, 60, 0.3),
                   rgba(60, 60, 60, 0.3)),
           url(./images/sks_header.jpg);
-  height: 520px;
+  filter: grayscale(30%);
+  height: 70vh;
   background-position: 15%;
   position: relative;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero h1 {
+  color: var(--grey);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 /* .top-nav {
@@ -87,7 +94,8 @@ h2 {
 .intro-box {
   width: 60%;
   color: var(--blue);
-  font-size: 24px;
+  font-size: 2rem;
+  line-height: 4rem;
   font-weight: 700;
   border-left: solid 5px var(--blue);
   padding: 2% 0 2% 5%;
@@ -140,14 +148,15 @@ h2 {
   display: flex;
   background-color: var(--blue);
   color: var(--grey);
+  border: 1px solid yellow;
 }
 
 .text-container {
-  font-size: 18px;
   width: 80%;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+  border: 1px solid red;
   /* padding: % 0 2% 5%;
   border-left: solid 5px var(--blue); */
 }
