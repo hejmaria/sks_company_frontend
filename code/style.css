@@ -148,7 +148,7 @@ p {
   display: flex;
   background-color: var(--blue);
   color: var(--grey);
-  border: 1px solid yellow;
+/*  border: 1px solid yellow; */
 }
 
 .text-container {
@@ -156,7 +156,7 @@ p {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+/*  border: 1px solid red; */
   /* padding: % 0 2% 5%;
   border-left: solid 5px var(--blue); */
 }
