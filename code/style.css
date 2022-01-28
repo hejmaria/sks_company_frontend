@@ -11,25 +11,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.skip {
-  position: absolute;
-  top: -1000px;
-  left: -1000px;
-  height: 1px;
-  width: 1px;
-  text-align: left;
-  overflow: hidden;
-}
-
-a.skip:active,
-a.skip:focus,
-a.skip:hover {
-  left: 0;
-  top: 0;
-  width: auto;
-  height: auto;
-  overflow: visible;
-}
 
 /* ///// HEADINGS + TYPOGRAPHY /////////////////////////////////////// */
 
@@ -53,7 +34,7 @@ p {
                   rgba(60, 60, 60, 0.3)),
           url(./images/sks_header.jpg);
   filter: grayscale(30%);
-  height: 70vh;
+  height: 86vh;
   background-position: 15%;
   position: relative;
   background-size: cover;
@@ -69,17 +50,39 @@ p {
   letter-spacing: 2px;
 }
 
-/* .top-nav {
-  position: absolute;
-  width: 130px;
-  height: 40px;
-  top: 8%;
-  right: 6%;
+.header-nav {
+  padding: 16px;
+  background:var(--blue);
+  color:var(--grey);
 }
 
-.top-nav img {
-  width: 30%;
-} */
+.header-nav img {
+  position: relative;
+  height: 10vh;
+  left: 10vw;
+}
+
+.header-nav div {
+  background-color:var(--grey);
+  display: inline;
+  position: relative;
+  height: 20px;
+  right: 10vw;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
 
 /* //// SKS intro /////////////////////////////////////// */
 .text-section:nth-child(2n-1) {
@@ -114,24 +117,8 @@ p {
 .grid-section {
   display: grid;
   height: 500px;
-
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-
-/* .red-img {
-  background-color: maroon;
-}
-.blue-img {
-  background-color: maroon;
-}
-.text {
-  background-color: var(--grey);
-} */
-
-/* .image-left-container .image-right-container {
-  object-fit: contain;
-  height: 500px;
-} */
 
 .image {
   width: 100%;
@@ -202,7 +189,9 @@ footer {
 } */
 
 /* Responsiveness TABLET /////////////////////////////////////// */
-/* @media (min-width: 768px) {} */
+@media (min-width: 768px) {
+
+}
 
 /* Responsiveness SCREEN /////////////////////////////////////// */
 /* @media (min-width: 1100px) {} */

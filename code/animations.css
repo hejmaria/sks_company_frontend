@@ -1,14 +1,60 @@
 /* ///// Animations and modules  */
 
-.rotating-text {
+.rotator-wrapper {
+    position: relative;
+}
 
+.rotator-wrapper h1 {
+    display: inline-block;
+    top: -0px;
+}
+
+.rotator-wrapper span {
+    display: inline-block;
+    min-width: 155px;
+    text-align: left;
+}
+.rotator-wrapper span span {
+    position: absolute;
+    top: 1.95rem;
+    opacity: 0;
+    animation: rotateWord 9s linear infinite 0s;
+}
+.rotator-wrapper span span:nth-child(2) {
+    animation-delay: 3s;
+}
+.rotator-wrapper span span:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes rotateWord {
+    0% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    5% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    15% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .rotating-text-word {
-    left: 0;
-    margin-bottom: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
+
 }
