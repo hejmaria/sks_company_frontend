@@ -151,24 +151,25 @@ p {
 /* ///// FOOTER /////////////////////////////////////// */
 footer {
   position: absolute;
-  height: 300px;
   width: 100%;
   background-color: var(--blue);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
 .footer-grid {
   display: grid;
   grid-gap: 2%;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 200px;
   width: 90%;
 }
 
 .footer-grid a {
   color: var(--yellow);
+  text-decoration: none;
 }
 
 .footer-left,
@@ -177,6 +178,22 @@ footer {
   background-color: var(--blue);
   color: var(--grey)
 }
+
+footer .contact p {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+footer .contact {
+  margin-bottom: 1rem;
+}
+
+footer .contact .phone,
+footer .contact .email {
+  font-size: .8rem;
+  line-height: 1.2rem;
+}
+
 
 /* .footer-container a,
 .footer-container p {
