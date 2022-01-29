@@ -59,7 +59,7 @@ p {
 .header-nav img {
   position: relative;
   height: 10vh;
-  left: 10vw;
+  left: 5%;
 }
 
 .header-nav div {
@@ -67,7 +67,7 @@ p {
   display: inline;
   position: relative;
   height: 20px;
-  right: 10vw;
+  right: 5%;
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
