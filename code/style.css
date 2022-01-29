@@ -6,6 +6,10 @@
   --white: #fff;
 }
 
+/* * {
+  border: red 1px solid;
+} */
+
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
@@ -51,9 +55,8 @@ p {
 }
 
 .header-nav {
-  padding: 16px;
+  padding: .5rem;
   background:var(--blue);
-  color:var(--grey);
 }
 
 .header-nav img {
@@ -63,12 +66,43 @@ p {
 }
 
 .header-nav div {
-  background-color:var(--grey);
-  display: inline;
   position: relative;
-  height: 20px;
+  display: table;
+  float: right;
   right: 5%;
+  height: 10vh;
 }
+
+.nav-element a {
+  margin-top: 50%;
+  margin-bottom: 50%;
+  display: table-cell;
+  vertical-align: middle;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav-element a:hover {
+  opacity: .75;
+}
+
+.nav-element .active,
+.nav-element a:active {
+  opacity: .5;
+}
+
+.nav-element a:nth-first-of-type(1) {
+  padding-left: .5rem;
+}
+
+.nav-element a:nth-last-of-type(1) {
+  padding-right: .5rem;
+}
+
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
@@ -101,9 +135,19 @@ p {
   line-height: 3rem;
   font-weight: 700;
   border-left: solid 5px var(--blue);
-  padding: 2% 0 2% 5%;
+  padding: 0 0 2% 5%;
   margin: 0 auto;
 }
+
+.intro-box p {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.intro-box p:nth-last-of-type(1) {
+  margin-bottom: -.5rem;
+}
+
 
 /* ///// SKS TEXT /////////////////////////////////////// */
 
@@ -163,7 +207,7 @@ footer {
 .footer-grid {
   display: grid;
   grid-gap: 2%;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   width: 90%;
 }
 
@@ -182,6 +226,12 @@ footer {
 footer .contact p {
   margin-top: 0rem;
   margin-bottom: 0rem;
+  font-weight: 300;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 footer .contact {
