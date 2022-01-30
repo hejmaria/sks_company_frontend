@@ -59,7 +59,7 @@ p {
 
 .header-nav img {
   position: relative;
-  height: 10vh;
+  height: 5vh;
   left: 5%;
 }
 
@@ -68,7 +68,7 @@ p {
   display: table;
   float: right;
   right: 5%;
-  height: 10vh;
+  height: 5vh;
 }
 
 .nav-element a {
@@ -126,8 +126,6 @@ p {
   font-size: 1.5rem;
   line-height: 3rem;
   font-weight: 700;
-/*  border-left: solid 5px var(--blue);
-  padding: 0 0 2% 5%; */
   margin: 0 auto;
 }
 
@@ -235,21 +233,26 @@ footer .map {
 /* Responsiveness TABLET /////////////////////////////////////// */
 @media (min-width: 768px) {
 
+  /* Hero h1 adj */
   .hero h1 {
     font-size: 3.5rem;
     margin-top: 2rem;
   }
 
+  /* Logo adj */
+  .header-nav img {
+    height: 10vh;
+  }
+
+  .header-nav div {
+    height: 10vh;
+  }
+
   /*  60% intro-width on tablet and up */
   .intro-box {
     width: 60%;
-    color: var(--blue);
-    font-size: 1.5rem;
-    line-height: 3rem;
-    font-weight: 700;
     border-left: solid 5px var(--blue);
     padding: 0 0 2% 5%;
-    margin: 0 auto;
   }
 
   /* zig-zag on tablet and up */
