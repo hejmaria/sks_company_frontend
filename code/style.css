@@ -6,15 +6,10 @@
   --white: #fff;
 }
 
-/* * {
-  border: red 1px solid;
-} */
-
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
-
 
 /* ///// HEADINGS + TYPOGRAPHY /////////////////////////////////////// */
 
@@ -104,18 +99,12 @@ p {
 }
 
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
+/* Sticky class added to header when reached its scroll position */
 .sticky {
   position: fixed;
   top: 0;
   width: 100%
 }
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
-}
-
 
 
 /* //// SKS intro /////////////////////////////////////// */
@@ -129,13 +118,13 @@ p {
 }
 
 .intro-box {
-  width: 60%;
+  width: 95%;
   color: var(--blue);
   font-size: 1.5rem;
   line-height: 3rem;
   font-weight: 700;
-  border-left: solid 5px var(--blue);
-  padding: 0 0 2% 5%;
+/*  border-left: solid 5px var(--blue);
+  padding: 0 0 2% 5%; */
   margin: 0 auto;
 }
 
@@ -151,16 +140,8 @@ p {
 
 /* ///// SKS TEXT /////////////////////////////////////// */
 
-/* .text-container {
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 5%;
-  padding-bottom: 5%;
-} */
-
 .grid-section {
   display: grid;
-  height: 500px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 
@@ -172,24 +153,21 @@ p {
 
 .text-container-gray {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--grey);
   color: var(--blue);
 }
 .text-container-blue {
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--blue);
   color: var(--grey);
-/*  border: 1px solid yellow; */
 }
 
 .text-container {
   width: 80%;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-/*  border: 1px solid red; */
-  /* padding: % 0 2% 5%;
-  border-left: solid 5px var(--blue); */
 }
 
 /* ///// FOOTER /////////////////////////////////////// */
@@ -220,12 +198,12 @@ footer {
 .footer-mid,
 .footer-right {
   background-color: var(--blue);
-  color: var(--grey)
+  color: var(--grey);
 }
 
 footer .contact p {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 300;
 }
 
@@ -244,19 +222,30 @@ footer .contact .email {
   line-height: 1.2rem;
 }
 
-
-/* .footer-container a,
-.footer-container p {
-  font-size: 17px;
-  line-height: 25px;
-  color: var(--white);
-  margin: 0;
-  text-align: center;
-  text-decoration: none;
-} */
-
 /* Responsiveness TABLET /////////////////////////////////////// */
 @media (min-width: 768px) {
+
+  /*  60% intro-width on tablet and up */
+  .intro-box {
+    width: 60%;
+    color: var(--blue);
+    font-size: 1.5rem;
+    line-height: 3rem;
+    font-weight: 700;
+    border-left: solid 5px var(--blue);
+    padding: 0 0 2% 5%;
+    margin: 0 auto;
+  }
+
+  /* zig-zag on tablet and up */
+  .grid-section:nth-child(odd) div:nth-child(1) {
+    order: 2;
+  }
+
+  .grid-section:nth-child(odd) div:nth-child(2) {
+    order: 1;
+  }
+
 
 }
 
