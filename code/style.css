@@ -34,7 +34,7 @@ p {
           url(./images/sks_header.jpg);
   filter: grayscale(30%);
   height: 50vh;
-  background-position: 15%;
+  background-position: right;
   position: relative;
   background-size: cover;
   display: flex;
@@ -241,6 +241,7 @@ footer .map {
 
   .hero {
     height: 86vh;
+    background-position: center;
   }
 
   /* Logo adj */
