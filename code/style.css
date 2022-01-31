@@ -27,11 +27,11 @@ p {
 /* ///// HEADER /////////////////////////////////////// */
 
 .hero {
-  background-image:
-          linear-gradient(
-                  rgba(60, 60, 60, 0.3),
-                  rgba(60, 60, 60, 0.3)),
-          url(./images/sks_header.jpg);
+  background-image: linear-gradient(
+      rgba(60, 60, 60, 0.3),
+      rgba(60, 60, 60, 0.3)
+    ),
+    url(./images/sks_header.jpg);
   filter: grayscale(30%);
   height: 50vh;
   background-position: right;
@@ -53,8 +53,8 @@ p {
 }
 
 .header-nav {
-  padding: .5rem;
-  background:var(--blue);
+  padding: 0.5rem;
+  background: var(--blue);
 }
 
 .header-nav img {
@@ -85,30 +85,28 @@ p {
 }
 
 .nav-element a:hover {
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .nav-element .active,
 .nav-element a:active {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .nav-element a:first-of-type(1) {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 .nav-element a:nth-last-of-type(1) {
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
-
 
 /* Sticky class added to header when reached its scroll position */
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
-
 
 /* //// SKS intro /////////////////////////////////////// */
 .text-section:nth-child(2n-1) {
@@ -121,23 +119,17 @@ p {
 }
 
 .intro-box {
-  width: 95%;
+  width: 85%;
   color: var(--blue);
-  font-size: 1.5rem;
-  line-height: 3rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
   font-weight: 700;
   margin: 0 auto;
 }
 
-.intro-box p {
-  font-size: inherit;
-  line-height: inherit;
-}
-
 .intro-box p:nth-last-of-type(1) {
-  margin-bottom: -.5rem;
+  margin-bottom: -0.5rem;
 }
-
 
 /* ///// SKS TEXT /////////////////////////////////////// */
 
@@ -169,6 +161,7 @@ p {
 
 .text-container {
   width: 80%;
+  padding-bottom: 5%;
 }
 
 /* ///// FOOTER /////////////////////////////////////// */
@@ -219,7 +212,7 @@ footer .contact {
 
 footer .contact .phone,
 footer .contact .email {
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 1.2rem;
 }
 
@@ -229,10 +222,8 @@ footer .map {
   opacity: 80%;
 }
 
-
 /* Responsiveness TABLET /////////////////////////////////////// */
 @media (min-width: 768px) {
-
   /* Hero h1 adj */
   .hero h1 {
     font-size: 3.5rem;
@@ -255,6 +246,8 @@ footer .map {
 
   /*  60% intro-width on tablet and up */
   .intro-box {
+    font-size: 1.5rem;
+    line-height: 3rem;
     width: 60%;
     border-left: solid 5px var(--blue);
     padding: 0 0 2% 5%;
@@ -272,7 +265,6 @@ footer .map {
 
 /* Responsiveness SCREEN /////////////////////////////////////// */
 @media (min-width: 1100px) {
-
   /* Hero h1 adj */
   .hero h1 {
     font-size: 4.6rem;
@@ -280,10 +272,8 @@ footer .map {
   }
 }
 
-
 /* Responsiveness LARGE SCREEN /////////////////////////////////////// */
 @media (min-width: 1800px) {
-
   /* Base REM */
   html {
     font-size: 20px;
@@ -292,7 +282,6 @@ footer .map {
 
 /* Responsiveness X-LARGE SCREEN /////////////////////////////////////// */
 @media (min-width: 2200px) {
-
   /* Section limit */
   section {
     padding-right: 5vw;
