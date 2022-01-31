@@ -127,10 +127,6 @@ p {
   margin: 0 auto;
 }
 
-.intro-box p:nth-last-of-type(1) {
-  margin-bottom: -0.5rem;
-}
-
 /* ///// SKS TEXT /////////////////////////////////////// */
 
 .grid-section {
@@ -206,6 +202,10 @@ footer h2 {
   margin-top: 1rem;
 }
 
+.space {
+  display: none;
+}
+
 footer .contact {
   margin-bottom: 1rem;
 }
@@ -253,6 +253,10 @@ footer .map {
     padding: 0 0 2% 5%;
   }
 
+  .intro-box p:nth-last-of-type(1) {
+    margin-bottom: -0.5rem;
+  }
+
   /* zig-zag on tablet and up */
   .grid-section:nth-child(odd) div:nth-child(1) {
     order: 2;
@@ -260,6 +264,10 @@ footer .map {
 
   .grid-section:nth-child(odd) div:nth-child(2) {
     order: 1;
+  }
+
+  .footer-grid {
+    width: 50%;
   }
 }
 
@@ -269,6 +277,13 @@ footer .map {
   .hero h1 {
     font-size: 4.6rem;
     margin-top: 2rem;
+  }
+
+  .space {
+    display: block;
+  }
+  .footer-grid {
+    width: 90%;
   }
 }
 
