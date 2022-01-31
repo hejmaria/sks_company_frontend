@@ -226,7 +226,7 @@ footer .contact .email {
 footer .map {
   width: 95%;
   height: 70%;
-  opacity: 70%;
+  opacity: 80%;
 }
 
 
@@ -278,6 +278,23 @@ footer .map {
   .hero h1 {
     font-size: 4.6rem;
     margin-top: 2rem;
+  }
+
+}
+
+
+/* Responsiveness LARGE SCREEN /////////////////////////////////////// */
+@media (min-width: 2000px) {
+
+  /* Base REM */
+  html {
+    font-size: 20px;
+  }
+
+  /* Section limit */
+  section {
+    padding-right: 10vw;
+    padding-left: 10vw;
   }
 
 }
