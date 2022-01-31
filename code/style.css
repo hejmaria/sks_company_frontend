@@ -282,16 +282,20 @@ footer .map {
 
 
 /* Responsiveness LARGE SCREEN /////////////////////////////////////// */
-@media (min-width: 2000px) {
+@media (min-width: 1800px) {
 
   /* Base REM */
   html {
     font-size: 20px;
   }
+}
+
+/* Responsiveness X-LARGE SCREEN /////////////////////////////////////// */
+@media (min-width: 2200px) {
 
   /* Section limit */
   section {
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
   }
 }
