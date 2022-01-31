@@ -224,7 +224,7 @@ footer .contact .email {
 }
 
 footer .map {
-  width: 90%;
+  width: 95%;
   height: 70%;
   opacity: 70%;
 }
@@ -272,4 +272,12 @@ footer .map {
 }
 
 /* Responsiveness SCREEN /////////////////////////////////////// */
-/* @media (min-width: 1100px) {} */
+@media (min-width: 1100px) {
+
+  /* Hero h1 adj */
+  .hero h1 {
+    font-size: 4.6rem;
+    margin-top: 2rem;
+  }
+
+}
