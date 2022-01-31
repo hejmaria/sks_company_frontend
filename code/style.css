@@ -93,7 +93,7 @@ p {
   opacity: .5;
 }
 
-.nav-element a:nth-first-of-type(1) {
+.nav-element a:first-of-type(1) {
   padding-left: .5rem;
 }
 
