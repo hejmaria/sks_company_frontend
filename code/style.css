@@ -264,6 +264,11 @@ footer .map {
     font-size: 1.2rem;
     line-height: 2.1rem;
   }
+
+  h1, h2 {
+    font-size: 2rem;
+  }
+
   /* Hero h1 adj */
   .hero h1 {
     font-size: 3rem;
@@ -321,6 +326,10 @@ footer .map {
   /* Base REM */
   html {
     font-size: 18px;
+  }
+
+  h1 {
+    font-size: 3rem;
   }
 
   /* Hero h1 adj */
