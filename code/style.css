@@ -29,8 +29,8 @@ p {
 
 .hero {
   background-image: linear-gradient(
-      rgba(60, 60, 60, 0.3),
-      rgba(60, 60, 60, 0.3)
+      rgba(60, 60, 60, 0.4),
+      rgba(60, 60, 60, 0.5)
     ),
     url(./images/sks_header.jpg);
   filter: grayscale(30%);
@@ -45,7 +45,7 @@ p {
 
 .hero h1 {
   color: var(--grey);
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 2px;
   margin-top: -2rem;
