@@ -16,13 +16,12 @@ body {
 
 h1,
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
 p, ul li {
-  font-size: 1.2rem;
-  line-height: 2.1rem;
+  line-height: 1.8rem;
   padding-bottom: 0.8rem;
 }
 
@@ -260,6 +259,11 @@ footer .map {
 
 /* Responsiveness TABLET /////////////////////////////////////// */
 @media (min-width: 768px) {
+
+  p, ul li {
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+  }
   /* Hero h1 adj */
   .hero h1 {
     font-size: 3rem;
@@ -280,14 +284,18 @@ footer .map {
     height: 10vh;
   }
 
-  /*  60% intro-width on tablet and up */
+
   .intro-box {
     font-size: 1.5rem;
     line-height: 3rem;
     width: 60%;
+  }
+
+  .intro-box.border-left {
     border-left: solid 5px var(--blue);
     padding: 0 0 2% 5%;
   }
+
 
   .intro-box p:nth-last-of-type(1) {
     margin-bottom: -0.5rem;
